@@ -2,7 +2,7 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Hero.css'
-
+import {Container} from '@chakra-ui/react'
 
 const Hero = () => {
     const heroData = [
@@ -34,7 +34,7 @@ const Hero = () => {
 
 
   return (
-    <section className='home' id='inicio'>
+    <Container className='home' id='inicio'>
       <Carousel fade>
         {
           heroData.map(hero => (
@@ -71,7 +71,7 @@ const Hero = () => {
             ))
         }
       </Carousel>
-    </section>
+    </Container>
     
   );
 }
